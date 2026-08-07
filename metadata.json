@@ -1,0 +1,6 @@
+{
+  "name": "Mwenho TelemedAI",
+  "description": "Plataforma de telemedicina completa de Angola com triagem inteligente em IA (Gemini), consultas virtuais por vídeo, prontuário eletrônico e painéis em Kwanzas (Kz) e normas da Ordem dos Médicos de Angola (ORMED).",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

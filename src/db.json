@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "u-admin-1",
+      "name": "Administrador Central Mwenho",
+      "email": "admin@mwenho.ao",
+      "password": "admin123",
+      "role": "ADMIN",
+      "avatarUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150",
+      "createdAt": "2026-07-25T23:24:27.934Z",
+      "authProvider": "email"
+    }
+  ],
+  "specialties": [
+    {
+      "id": "sp-1",
+      "name": "Clínica Geral",
+      "description": "Atendimento inicial, prevenção, diagnóstico de sintomas gerais e encaminhamento.",
+      "icon": "Activity"
+    },
+    {
+      "id": "sp-2",
+      "name": "Cardiologia",
+      "description": "Diagnóstico e tratamento de doenças do coração e do sistema cardiovascular.",
+      "icon": "Heart"
+    },
+    {
+      "id": "sp-3",
+      "name": "Pediatria",
+      "description": "Assistência médica especializada para bebês, crianças e adolescentes.",
+      "icon": "Baby"
+    },
+    {
+      "id": "sp-4",
+      "name": "Psiquiatria",
+      "description": "Prevenção, diagnóstico, tratamento e reabilitação dos distúrbios mentais e emocionais.",
+      "icon": "Brain"
+    },
+    {
+      "id": "sp-5",
+      "name": "Dermatologia",
+      "description": "Diagnóstico, tratamento e prevenção de doenças da pele, pelos, cabelos, unhas e mucosas.",
+      "icon": "Sparkles"
+    },
+    {
+      "id": "sp-6",
+      "name": "Ortopedia",
+      "description": "Cuidados com os ossos, músculos, articulações, ligamentos e tendões.",
+      "icon": "Bone"
+    }
+  ],
+  "doctors": [],
+  "patients": {},
+  "appointments": [],
+  "aiReports": [],
+  "messages": [],
+  "notifications": [],
+  "loginLogs": [],
+  "managers": []
+}

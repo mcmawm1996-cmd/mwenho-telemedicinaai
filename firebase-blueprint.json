@@ -1,0 +1,129 @@
+{
+  "entities": {
+    "users": {
+      "title": "User",
+      "description": "User account details including role and auth info",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "authProvider": { "type": "string" },
+        "password": { "type": "string" },
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "avatarUrl": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "role"]
+    },
+    "specialties": {
+      "title": "Medical Specialty",
+      "description": "Available medical specialties",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "icon": { "type": "string" }
+      },
+      "required": ["id", "name"]
+    },
+    "doctors": {
+      "title": "Doctor Profile",
+      "description": "Doctor profile and availability",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "specialtyId": { "type": "string" },
+        "specialtyName": { "type": "string" },
+        "licenseNumber": { "type": "string" },
+        "bio": { "type": "string" },
+        "rating": { "type": "number" },
+        "consultationFee": { "type": "number" },
+        "avatarUrl": { "type": "string" },
+        "availableDays": { "type": "array", "items": { "type": "string" } },
+        "availableSlots": { "type": "array", "items": { "type": "string" } },
+        "approved": { "type": "boolean" }
+      },
+      "required": ["id", "name", "approved"]
+    },
+    "patients": {
+      "title": "Patient Profile",
+      "description": "Medical background profile for patients",
+      "properties": {
+        "id": { "type": "string" },
+        "dateOfBirth": { "type": "string" },
+        "gender": { "type": "string" },
+        "bloodType": { "type": "string" },
+        "allergies": { "type": "array", "items": { "type": "string" } },
+        "chronicConditions": { "type": "array", "items": { "type": "string" } },
+        "medications": { "type": "array", "items": { "type": "string" } },
+        "insuranceProvider": { "type": "string" }
+      },
+      "required": ["id"]
+    },
+    "appointments": {
+      "title": "Appointment",
+      "description": "Consultation appointments and prescriptions",
+      "properties": {
+        "id": { "type": "string" },
+        "patientId": { "type": "string" },
+        "patientName": { "type": "string" },
+        "doctorId": { "type": "string" },
+        "doctorName": { "type": "string" },
+        "doctorSpecialty": { "type": "string" },
+        "date": { "type": "string" },
+        "time": { "type": "string" },
+        "status": { "type": "string" },
+        "consultationFee": { "type": "number" },
+        "paymentStatus": { "type": "string" },
+        "videoRoomId": { "type": "string" },
+        "aiReportId": { "type": "string" },
+        "doctorNotes": { "type": "string" }
+      },
+      "required": ["id", "patientId", "doctorId", "date", "time", "status"]
+    },
+    "aiReports": {
+      "title": "AI Clinical Report",
+      "description": "AI pre-triage summary reports",
+      "properties": {
+        "id": { "type": "string" },
+        "patientId": { "type": "string" },
+        "patientName": { "type": "string" },
+        "symptoms": { "type": "string" },
+        "severity": { "type": "string" },
+        "suggestedSpecialty": { "type": "string" },
+        "clinicalSummary": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "patientId", "symptoms"]
+    },
+    "messages": {
+      "title": "Chat Message",
+      "description": "Messages in AI triage or direct chat",
+      "properties": {
+        "id": { "type": "string" },
+        "chatId": { "type": "string" },
+        "senderId": { "type": "string" },
+        "senderName": { "type": "string" },
+        "text": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "isAi": { "type": "boolean" }
+      },
+      "required": ["id", "chatId", "text"]
+    },
+    "notifications": {
+      "title": "Notification",
+      "description": "User notifications",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "message": { "type": "string" },
+        "type": { "type": "string" },
+        "read": { "type": "boolean" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "title"]
+    }
+  }
+}

@@ -60,4 +60,4 @@ Contribuições de todos os níveis são bem-vindas no **TelemedAI**.
 * **Frontend:** Componentes em React + Tailwind CSS e gráficos em Recharts.
 * **Backend & IA:** Rotas Express e engenharia de prompts com Google GenAI SDK.
 * **DevOps:** Otimização de Docker e fluxos de CI/CD.
-* **Qualidade:** Testes automatizados e documentação.
+* **Qualidade:** Testes automatizados e documentação. 
